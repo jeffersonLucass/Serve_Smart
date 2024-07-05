@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #EC002C;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header a{
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu h2{
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Itens do menu */
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/* Botão de pedido */
+.btn-order {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
