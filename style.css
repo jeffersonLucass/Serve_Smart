@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin : 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('assets/bg-svg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0; 
+}
+
+.logo {
+    font-size: 24px; 
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.button-cardapio,
+.button-pedido,
+.button-fechamento {
+    margin: 10px 0;
+}
+
+
+.button-cardapio button,
+.button-pedido button,
+.button-fechamento button {
+    width: 200px; /* Ajuste conforme necessário */
+}
