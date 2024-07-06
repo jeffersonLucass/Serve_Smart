@@ -13,13 +13,13 @@ body {
     margin: 0; 
 }
 
-.logo {
-    font-size: 24px; 
-    font-weight: bold;
+.logo{
+    font-size: 50px;
     position: absolute;
-    top: 10px;
+    top: 30px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
+    
 }
 
 .app {
@@ -28,8 +28,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 40px;
     border-radius: 10px;
 }
 
@@ -37,6 +37,7 @@ body {
 .button-pedido,
 .button-fechamento {
     margin: 10px 0;
+    margin-right: 38px;
 }
 
 
