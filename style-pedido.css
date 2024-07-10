@@ -1,48 +1,84 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 38px;
-    left: 0;
-    background-color: #423f3f3f;
-    padding-top: 20px;
-}
-
-.sidebar a {
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    display: block;
-}
-
-.sidebar a:hover, .sidebar a.active {
-    background-color: #575757;
-    border-radius: 5px;
+body {
+    background-color: #1c1c1c;
+    color: #f4f4f9;
 }
 
 header {
-    
-    background-color: #423f3f3f; 
-    padding: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: #1c1c1c;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f4f4f9;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #575757;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .content {
     margin-left: 250px;
-    margin-top: 60px; /* Espaço para o cabeçalho */
+    margin-top: 59px; /* Espaço para o cabeçalho */
     padding: 20px;
+    background-color: #333;
+    color: #f4f4f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.item {
+    flex: 1 1 calc(25% - 20px); /* Responsivo: 4 itens por linha */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.item p {
+    margin-top: 10px;
+    color: #ccc; /* Cor do texto */
 }
 
 .tab-content {
@@ -51,4 +87,14 @@ header {
 
 .tab-content.active {
     display: block;
+}
+
+.tab-content h2 {
+    margin-bottom: 15px;
+    color: #f4f4f9;
+}
+
+.tab-content p {
+    line-height: 1.6;
+    color: #ddd;
 }
