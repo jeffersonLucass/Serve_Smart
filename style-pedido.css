@@ -22,7 +22,7 @@
     display: block;
 }
 
-.sidebar a:hover {
+.sidebar a:hover, .sidebar a.active {
     background-color: #575757;
     border-radius: 5px;
 }
@@ -37,4 +37,18 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.content {
+    margin-left: 250px;
+    margin-top: 60px; /* Espaço para o cabeçalho */
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }

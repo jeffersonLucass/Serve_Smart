@@ -4,21 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela dos pedidos</title>'
-    <link rel="stylesheet" href="style-pedido.css">
+    <link rel="stylesheet" href="style-pedido.css">`
+    <script src="pedido.js"></script>
 </head>
 <body>
     <header>
         <p>ServeSmart</p>
     </header>
     <aside class="sidebar">
-        <a href="#aba1">Entradas</a>
-        <a href="#aba2">Saladas</a>
-        <a href="#aba3">Pratos Principais</a>
-        <a href="#aba4">Massas</a>
-        <a href="#aba5">Pizzas</a>
-        <a href="#aba6">Acompanhamentos</a>
-        <a href="#aba7">Sobremesas</a>
-        <a href="#aba8">Bebidas</a>
+        <a href="#aba1" class="tab-link" onclick="openTab(event, 'aba1')">Entradas</a>
+        <a href="#aba2" class="tab-link" onclick="openTab(event, 'aba2')">Saladas</a>
+        <a href="#aba3" class="tab-link" onclick="openTab(event, 'aba3')">Pratos Principais</a>
+        <a href="#aba4" class="tab-link" onclick="openTab(event, 'aba4')">Massas</a>
+        <a href="#aba5" class="tab-link" onclick="openTab(event, 'aba5')">Pizzas</a>
+        <a href="#aba6" class="tab-link" onclick="openTab(event, 'aba6')">Acompanhamentos</a>
+        <a href="#aba7" class="tab-link" onclick="openTab(event, 'aba7')">Sobremesas</a>
+        <a href="#aba8" class="tab-link" onclick="openTab(event, 'aba8')">Bebidas</a>
     </aside>
+
+    <div class="content">
+        <div id="aba1" class="tab-content">
+            <h2>Entradas</h2>
+            <p>Conteúdo</p>
+        </div>
+        <div id="aba2" class="tab-content">
+            <h2>Saladas</h2>
+            <p>Conteúdo</p>
+        </div>
+        <div id="aba3" class="tab-content">
+            <h2>Pratos Principais</h2>
+            <p>Conteúdo</p>
+        </div>
+        <div id="aba4" class="tab-content">
+            <h2>Massas</h2>
+            <p>Conteúdo</p>
+        </div>
+        <div id="aba5" class="tab-content">
+            <h2>Pizzas</h2>
+            <p>Conteúdo</p>
+        </div>
+        <div id="aba6" class="tab-content">
+            <h2>Acompanhamentos</h2>
+            <p>Conteúdo</p>
+        </div>
+        <div id="aba7" class="tab-content">
+            <h2>Sobremesas</h2>
+            <p>Conteúdo</p>
+        </div>
+        <div id="aba8" class="tab-content">
+            <h2>Bebidas</h2>
+            <p>Conteúdo</p>
+        </div>
+    </div>
 </body>
 </html>
