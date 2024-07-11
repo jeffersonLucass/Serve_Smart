@@ -75,6 +75,8 @@ header p {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    width: 150px;
+    height: 150px;
 }
 .item p {
     margin-top: 10px;
