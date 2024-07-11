@@ -1,20 +1,24 @@
-function openTab(evt, tabName) {
-    // Declare all variables
+function openTab(evt, tabId) {
     var i, tabcontent, tablinks;
 
-    // Get all elements with class="tab-content" and hide them
+    // Esconde todos os conteúdos das abas
     tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    // Get all elements with class="tab-link" and remove the class "active"
+    // Remove a classe "active" de todos os links de abas
     tablinks = document.getElementsByClassName("tab-link");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(tabName).style.display = "block";
+    // Mostra o conteúdo da aba atual e adiciona a classe "active" ao link da aba atual
+    document.getElementById(tabId).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+// Abre a primeira aba por padrão
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelector('.tab-link').click();
+});
