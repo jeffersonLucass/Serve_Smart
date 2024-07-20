@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .menu-section {
+            margin-bottom: 40px;
+        }
+        .menu-section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .menu-item h3 {
+            margin: 0;
+        }
+        .menu-item p {
+            margin: 5px 0 0;
+            color: #666;
+        }
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurante Gourmet</h1>
+    </header>
+    <nav>
+        <a href="#entradas">Entradas</a>
+        <a href="#pratos-principais">Pratos Principais</a>
+        <a href="#sobremesas">Sobremesas</a>
+        <a href="#bebidas">Bebidas</a>
+    </nav>
+    <div class="container">
+        <section id="entradas" class="menu-section">
+            <h2>Entradas</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Salada Caesar</h3>
+                    <p>Alface, croutons, queijo parmesão e molho caesar.</p>
+                </div>
+                <div class="price">R$ 25,00</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Bruschetta</h3>
+                    <p>Pão italiano, tomate, manjericão e azeite de oliva.</p>
+                </div>
+                <div class="price">R$ 20,00</div>
+            </div>
+        </section>
+        <section id="pratos-principais" class="menu-section">
+            <h2>Pratos Principais</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Filé Mignon</h3>
+                    <p>Filé mignon grelhado com molho de mostarda e batatas rústicas.</p>
+                </div>
+                <div class="price">R$ 60,00</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Salmão Grelhado</h3>
+                    <p>Salmão grelhado com legumes salteados.</p>
+                </div>
+                <div class="price">R$ 55,00</div>
+            </div>
+        </section>
+        <section id="sobremesas" class="menu-section">
+            <h2>Sobremesas</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Cheesecake</h3>
+                    <p>Cheesecake com calda de frutas vermelhas.</p>
+                </div>
+                <div class="price">R$ 18,00</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Petit Gâteau</h3>
+                    <p>Bolo de chocolate com recheio cremoso e sorvete de baunilha.</p>
+                </div>
+                <div class="price">R$ 20,00</div>
+            </div>
+        </section>
+        <section id="bebidas" class="menu-section">
+            <h2>Bebidas</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Suco de Laranja</h3>
+                    <p>Suco de laranja natural.</p>
+                </div>
+                <div class="price">R$ 8,00</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Vinho Tinto</h3>
+                    <p>Vinho tinto seco, safra de 2018.</p>
+                </div>
+                <div class="price">R$ 45,00</div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Restaurante Gourmet. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
