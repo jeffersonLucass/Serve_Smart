@@ -1,8 +1,6 @@
 const sidebarLinks = document.querySelectorAll('.sidebar a');
 const tabContents = document.querySelectorAll('.tab-content');
 
-
-
 function openTab(evt, tabId) {
     var i, tabcontent, tablinks;
 
@@ -27,7 +25,6 @@ function openTab(evt, tabId) {
 document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.tab-link').click();
 });
-
 
 // Adiciona um evento de clique para cada link de aba
 sidebarLinks.forEach((link, index) => {
